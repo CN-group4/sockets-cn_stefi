@@ -22,7 +22,7 @@ while True:
         break
 
     mesaj = input("Server: ")
-    conn.send(mesaj.encode("utf-8"))
+    conn.send((mesaj+"\n").encode("utf-8"))
 
     if mesaj.lower() == "exit":
         break
